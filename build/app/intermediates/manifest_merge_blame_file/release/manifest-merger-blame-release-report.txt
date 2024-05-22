@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.megadevelopers.diary"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml
+10    <!--
+11         Required to query activities that can process text, see:
+12         https://developer.android.com/training/package="com.megadevelopers.diary">
+13         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+14
+15         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+16    -->
+17    <queries>
+17-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:23:5-28:15
+18        <intent>
+18-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:24:9-27:18
+19            <action android:name="android.intent.action.PROCESS_TEXT" />
+19-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:25:13-72
+19-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:25:21-70
+20
+21            <data android:mimeType="text/plain" />
+21-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:26:13-50
+21-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:26:19-48
+22        </intent>
+23    </queries>
+24
+25    <application
+26        android:name="android.app.Application"
+26-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:2:40-73
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.6.0] C:\Users\Syed Isbah\.gradle\caches\transforms-3\2579a7de00054bf46a8dbc332552f622\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+28        android:icon="@mipmap/ic_launcher"
+28-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:2:74-108
+29        android:label="Diary" >
+29-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:2:18-39
+30        <activity
+30-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:9-13:20
+31            android:name="com.megadevelopers.diary.MainActivity"
+31-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:19-47
+32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+32-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:138-288
+33            android:exported="true"
+33-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:48-71
+34            android:hardwareAccelerated="true"
+34-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:289-323
+35            android:launchMode="singleTop"
+35-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:72-102
+36            android:theme="@style/LaunchTheme"
+36-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:103-137
+37            android:windowSoftInputMode="adjustResize" >
+37-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:3:324-366
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+45-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:8:13-119
+46                android:name="io.flutter.embedding.android.NormalTheme"
+46-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:8:24-79
+47                android:resource="@style/NormalTheme" />
+47-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:8:80-117
+48
+49            <intent-filter>
+49-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:9:13-12:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:10:17-68
+50-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:10:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:11:17-76
+52-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:11:27-74
+53            </intent-filter>
+54        </activity>
+55        <!--
+56             Don't delete the meta-data below.
+57             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+58        -->
+59        <meta-data
+59-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:16:9-71
+60            android:name="flutterEmbedding"
+60-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:16:20-51
+61            android:value="2" />
+61-->C:\Users\Syed Isbah\OneDrive\Desktop\diary_app\android\app\src\main\AndroidManifest.xml:16:52-69
+62
+63        <uses-library
+63-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+64            android:name="androidx.window.extensions"
+64-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+65            android:required="false" />
+65-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+66        <uses-library
+66-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+67            android:name="androidx.window.sidecar"
+67-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0-beta04] C:\Users\Syed Isbah\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+69    </application>
+70
+71</manifest>
